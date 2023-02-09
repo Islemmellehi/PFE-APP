@@ -16,9 +16,10 @@
         box-shadow: none;
     }
 }
+
 body {
     overflow-x: hidden;
-    height: 3000px;
+    height: 3500px;
     z-index: -1;
 }
 
@@ -33,7 +34,7 @@ header {
 
 #logo-img {
     width: 20%;
-    
+
     margin-top: -5%;
     margin-left: -2.5%;
     z-index: 1;
@@ -185,15 +186,15 @@ li a:hover {
 
 .btn-sign {
     width: 75px;
-    height: 30px;
+    height: 40px;
     border: hidden;
     border-radius: 2px;
-    font-size: 15px;
+    font-size: 13px;
     background-color: #ffffff;
     color: #20262E;
     position: absolute;
     top: 50px;
-    left: 1200px; 
+    left: 1200px;
     letter-spacing: 1px
 }
 
@@ -257,21 +258,25 @@ button:before {
 }
 
 
+#dots:hover{
+    cursor: pointer;
+}
 
 
-
-.description{
+.description {
     margin-top: 28%;
     font-family: NavFont;
     margin-left: 8%;
     width: 400px;
-    
+
 }
-.description h2{
+
+.description h2 {
     text-align: center;
-    
+
 }
-.description article{
+
+.description article {
     width: 500px;
     margin-left: 16%;
     margin-top: 40px;
@@ -281,22 +286,24 @@ button:before {
 
 #advid video {
     width: 35%;
-    margin-top: -17%;
-    margin-left: 60%;
+    position: absolute;
+    top: 840px;
+    left: 750px;
     border: hidden;
-    
+
 }
-#advid video:hover{
+
+#advid video:hover {
     cursor: pointer;
 }
 
 /* Hide Play button + controls on iOS */
 video::-webkit-media-controls {
-    display:none !important;
+    display: none !important;
 }
 
 
-.Stat1{
+.Stat1 {
     margin-left: 9%;
     margin-top: 6%;
     font-family: titleFont;
@@ -304,84 +311,443 @@ video::-webkit-media-controls {
 }
 
 
-#counter1{
-    margin-top: 14%;
-    margin-left: 5%;
+#counter1 {
+    position: absolute;
+    top: 1370px;
+    left: 13.2%;
     font-size: 22px;
+
 }
-#counter2{
+
+#counter2 {
     position: absolute;
     top: 1370px;
     left: 36.5%;
     font-size: 22px;
 
 }
-#counter3{
+
+#counter3 {
     position: absolute;
     top: 1370px;
     left: 57.7%;
     font-size: 22px;
 
 }
-#counter4{
+
+#counter4 {
     position: absolute;
     top: 1370px;
     left: 80%;
     font-size: 22px;
 
 }
-.Stat2{
-    margin-left: 33% ;
+
+.Stat2 {
+    margin-left: 33%;
     margin-top: -12.8%;
     font-family: titleFont;
 }
-.Stat2 h4{
+
+.Stat2 h4 {
     position: absolute;
     top: 1178px;
     left: 33.2%;
 }
-.Stat3{
-    margin-left: 56% ;
+
+.Stat1 h4 {
+    position: absolute;
+    top: 1178px;
+    left: 8.5%;
+}
+
+.Stat3 {
+    margin-left: 56%;
     font-family: titleFont;
     margin-top: -3%;
 
 }
-.Stat3 h4{
+
+.Stat3 h4 {
     position: absolute;
     top: 1178px;
     left: 55.7%;
 }
-.Stat4 h4{
+
+.Stat4 h4 {
     position: absolute;
     top: 1178px;
     left: 73%;
 }
 
-.Stat4{
-    margin-left: 72% ;
+.Stat4 {
+    margin-left: 72%;
     margin-top: -2.7%;
     font-family: titleFont;
 
 }
 
 
-#icon1{
+#icon1 {
     position: absolute;
     top: 1255px;
-    left: 11%; 
+    left: 11%;
 }
-#icon2{
+
+#icon2 {
     position: absolute;
     top: 1255px;
     left: 35.5%;
 }
-#icon3{
+
+#icon3 {
     position: absolute;
     top: 1255px;
     left: 55%;
 }
-#icon4{
+
+#icon4 {
     position: absolute;
     top: 1255px;
     left: 77.5%;
+}
+
+
+
+
+#more {
+    display: none;
+}
+
+#readBtn:hover {
+    cursor: pointer;
+}
+
+.reserve img {
+    margin-top: 40%;
+    width: 1370px;
+    height: 680px;
+    margin-left: -2%;
+}
+
+#booking {
+    margin-top: -43%;
+    margin-left: 58%;
+    font-family: titleFont;
+    color: whitesmoke;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+#signing {
+    margin-top: 3%;
+    margin-left: 58%;
+    font-family: titleFont;
+    color: whitesmoke;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+#bookingarticle {
+    margin-left: 58%;
+    width: 450px;
+    font-family: titleFont;
+    color: whitesmoke;
+    margin-top: 1%;
+}
+
+#signingarticle {
+    margin-left: 58%;
+    width: 450px;
+    font-family: titleFont;
+    color: whitesmoke;
+    margin-top: 1%;
+}
+
+#bookBtn {
+    margin-left: 58%;
+    margin-top: 2%;
+    border-radius: 0px;
+    border: hidden;
+    font-family: titleFont;
+    background-color: #F2A154;
+    color: #20262E;
+    width: 100px;
+}
+
+#signBtn {
+    margin-left: 58%;
+    margin-top: 2%;
+    border-radius: 0px;
+    border: hidden;
+    font-family: titleFont;
+    background-color: #F2A154;
+    color: #20262E;
+    width: 100px;
+}
+
+.roomsCheck {
+    margin-top: 18%;
+    font-family: titleFont;
+    text-align: center;
+}
+
+.roomsCheck h1 {
+    font-size: 100px;
+    letter-spacing: 8px;
+    color: #B68973;
+}
+
+.roomsCheck h2 {
+    font-size: 35px;
+}
+
+.roomsCheck article {
+    margin-top: 2%;
+    font-size: 18px;
+}
+
+.roomsCheck button {
+    margin-top: 2%;
+    border: hidden;
+    border-radius: 0px;
+    width: 150px;
+    height: 50px;
+    background-color: #B68973;
+}
+
+.roomsCheck button:hover{
+    --y: -1;
+    --scale: 1;
+    --border-scale: 1;
+    letter-spacing: 0
+}
+
+
+
+
+
+
+
+
+
+.imageRes:hover{
+    cursor: pointer;
+}
+
+
+
+.textRes{
+    opacity: 0;
+    transition: all 0.2s ease-in;
+   position: absolute;
+   top: 2600px;
+    background-color: rgba(255,255,255,0.3);
+    width: 32%;
+    height: 90%;
+    box-sizing: border-box;
+    font-family: titleFont;
+    text-align: center;
+}
+.textRes{
+    padding-top :17%;
+}
+.containerRestaurant:hover .textRes{
+    opacity: 1;
+    cursor: pointer;
+}
+.containerRestaurant{
+    width: 400px;
+    height: 600px;
+    margin-left: 5%;
+    margin-top: 7%;
+    box-shadow: 2px 5px 5px #20262E;
+
+}
+.containerRestaurant img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.textCafé{
+    opacity: 0;
+    transition: all 0.2s ease-in;
+   position: absolute;
+   top: 2605px;
+    background-color: rgba(255,255,255,0.3);
+    width: 31%;
+    height: 43%;
+    box-sizing: border-box;
+    font-family: titleFont;
+    text-align: center;
+}
+.textCafé{
+    padding-top :8%;
+}
+.containerCafé:hover .textCafé{
+    opacity: 1;
+    cursor: pointer;
+}
+.containerCafé{
+    width: 400px;
+    height: 300px;
+    margin-left: 68.5%;
+    margin-top: -45.8%;
+    box-shadow: 2px 5px 5px #20262E;
+
+}
+.containerCafé img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.textFun{
+    opacity: 0;
+    transition: all 0.2s ease-in;
+   position: absolute;
+   top: 2905px;
+    background-color: rgba(255,255,255,0.3);
+    width: 31%;
+    height: 43%;
+    box-sizing: border-box;
+    font-family: titleFont;
+    text-align: center;
+}
+.textFun{
+    padding-top :8%;
+}
+.containerFun:hover .textFun{
+    opacity: 1;
+    cursor: pointer;
+}
+.containerFun{
+    width: 400px;
+    height: 300px;
+    margin-left: 68.5%;
+    margin-top: 0%;
+    box-shadow: 2px 5px 5px #20262E;
+
+}
+.containerFun img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.textPart img{
+    width: 30%;
+    position: absolute;
+    top: 2550px;
+    left: 470px;
+}
+.textPart article{
+    width: 30%;
+    position: absolute;
+    top: 2880px;
+    left: 530px;
+    width: 300px;
+    font-family: titleFont;
+    font-size: 18px;
+    text-align: center;
+}
+.textPart button{
+    position: absolute;
+    top: 3030px;
+    left: 615px;
+    border-radius: 0px;
+    border: hidden;
+    font-family: titleFont;
+}
+.textPart button:hover{
+    cursor: pointer;
+    --y: -1;
+    --scale: 1;
+    --border-scale: 1;
+    letter-spacing: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 1350px;
+    background-color: #20262E;
+    height: 320px;
+    margin-top: 7%;
+}
+
+
+
+
+
+.footerPart1{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 65%;
+    top: 3205px;
+}
+.footerPart1 img{
+    width: 100%;
+    height: 100%;
+}
+.footerPart2{
+    position: absolute;
+    left: 35%;
+    top: 3358px;
+    color: #d1d5db;
+    font-family: titleFont;
+}
+.footerPart2 h3{
+    font-size: 32px;
+    
+}
+.footerPart2 p{
+    font-size: 13px;
+    
+}
+
+
+.footerPart3{
+    position: absolute;
+    left: 5%;
+    top: 3355px;
+    color: #d1d5db;
+    font-family: titleFont;
+}
+.footerPart3 a{
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 1%;
+}
+.footerPart3 h3{
+    font-size: 32px;
+    
+}
+.copyright p{
+    position: absolute;
+    left: 44%;
+    top: 3587px;
+    font-size: 13px;
+    color: #d1d5db;
+    font-family: titleFont;
 }

@@ -94,18 +94,25 @@
           <article>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            ad minim veniam <span id="dots">....</span>
+            <span id="more">
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</span
+            >
           </article>
           <article style="font-style: italic">
-            <a href="#" style="text-decoration: none; color: #20262e">
+            <a
+              style="text-decoration: none; color: #20262e"
+              id="readBtn"
+              onclick="ReadMore()"
+            >
               Read More ...
             </a>
           </article>
         </div>
         <aside>
           <div class=".video" id="advid">
-            <video src="../imgs/hotel ad.mp4" loop muted id="videoAD"></video>
+            <video src="../imgs/hotel ad.mp4" autoplay muted id="videoAD"></video>
           </div>
         </aside>
       </section>
@@ -116,7 +123,8 @@
           <lord-icon
             src="https://cdn.lordicon.com/fxylrfia.json"
             trigger="loop"
-            style="width: 100px; height: 100px" id="icon1"
+            style="width: 100px; height: 100px"
+            id="icon1"
           >
           </lord-icon>
 
@@ -128,7 +136,8 @@
           <lord-icon
             src="https://cdn.lordicon.com/xorddmfu.json"
             trigger="loop"
-            style="width: 100px; height: 100px; margin-left: -1%" id="icon2"
+            style="width: 100px; height: 100px; margin-left: -1%"
+            id="icon2"
           >
           </lord-icon>
           <h3 id="counter2"></h3>
@@ -139,7 +148,8 @@
           <lord-icon
             src="https://cdn.lordicon.com/whttoese.json"
             trigger="loop"
-            style="width: 100px; height: 100px;" id="icon3"
+            style="width: 100px; height: 100px"
+            id="icon3"
           >
           </lord-icon>
           <h3 id="counter3"></h3>
@@ -150,13 +160,98 @@
           <lord-icon
             src="https://cdn.lordicon.com/oebaixof.json"
             trigger="loop"
-            style="width: 100px; height: 100px" id="icon4"
+            style="width: 100px; height: 100px"
+            id="icon4"
           >
           </lord-icon>
           <h3 id="counter4"></h3>
         </div>
       </section>
+      <section class="reserve">
+        <img src="../imgs/sectionBG.jpg" />
+        <div class="reserveText">
+          <h2 id="booking">Booking</h2>
+          <article id="bookingarticle">
+            Don't hesitate to book and assure a perfect holiday with Lotus
+            Resort where your comfort is our first priority.
+          </article>
+          <button class="btn btn-dark" id="bookBtn">Book</button>
+
+          <h2 id="signing">Account</h2>
+          <article id="signingarticle">
+            Create your account and customize your profile in order to get the
+            best recommendations for you.
+          </article>
+          <button class="btn btn-dark" id="signBtn">Sign Up</button>
+        </div>
+      </section>
+      <section class="roomsCheck">
+        <h1><b>50+</b></h1>
+        <h2><b>Different Rooms</b></h2>
+        <article>
+          Customized to all your needs and desires, Lotus Resort offers you a
+          large collection of rooms to choose from.
+        </article>
+        <button class="btn btn-dark">Check Rooms</button>
+      </section>
+      <section class="offers">
+        <div class="containerRestaurant">
+          <img src="../imgs/restaurant.jpg" class="imageRes" id="imageR" />
+          <div class="textRes">
+            <h1>Restaurants</h1>
+            <article>High quality,fresh and home made food.</article>
+          </div>
+        </div>
+        <div class="containerCafé">
+          <img src="../imgs/coffee.jpg" class="imageCafé" id="imageC" />
+          <div class="textCafé">
+            <h1>Casual Hangouts</h1>
+            <article>Peaceful cafés for casual hangouts.</article>
+          </div>
+        </div>
+        <div class="containerFun">
+          <img src="../imgs/fun.jpg" class="imageFun" id="imageF" />
+          <div class="textFun">
+            <h1>Events</h1>
+            <article>Fun, lively events.</article>
+          </div>
+        </div>
+        <div class="textPart">
+          <img src="../imgs/logogrey.png" alt="">
+          <article>
+          We deeply care to provide you with the best experience possible. For that we make sure to offer you the best of the best.
+          </article>
+          <button class="btn btn-dark">Check Insights</button>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footerPart1">
+           <img src="../imgs/logo2.png" alt="Logo" id="secondlogo">
+        </div>
+        <div class="footerPart2">
+          <h3>Contact Us</h3>
+          <p id="p1">(+216) 25 066 022</p>
+          <p>(+216) 98 547 112</p>
+          <p>(+216)25 066 022</p>
+        </div>
+        <div class="footerPart3">
+          <h3>Navigate our site</h3>
+          <a href="#">Home</a> <br>
+          <a href="#">Rooms</a> <br>
+          <a href="#">Insights</a> <br>
+          <a href="#">Reservation</a> <br>
+          <a href="#">Log In</a> <br>
+          <a href="#">Sign Up</a> <br>
+          <a href="#">Contact</a>
+          
+        </div>
+        <div class="copyright">
+          <p>Developped by OptimaSoft</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
