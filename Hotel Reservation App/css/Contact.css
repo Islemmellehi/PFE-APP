@@ -1,0 +1,374 @@
+@font-face {
+    font-family: NavFont;
+    src: url(../fonts/GentiumBookPlus-Bold.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/ElMessiri-VariableFont_wght.ttf);
+}
+header {
+    height: 120px;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    transition: 0.3s;
+}
+
+
+#logo-img {
+    width: 20%;
+
+    margin-top: -5%;
+    margin-left: -2.5%;
+    z-index: 1;
+}
+
+nav {
+    margin-top: -10%;
+    margin-left: 19%;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: titleFont;
+    letter-spacing: 2px;
+
+}
+
+li a:hover {
+    color: rgb(172, 172, 172);
+    width: 102%;
+    height: 20px;
+    transition: 0.3s;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 6px;
+
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 10px;
+
+    color: #1a1a1a;
+    border-bottom: #d1d5db;
+    border-bottom-width: 20px;
+}
+
+.btn-sign {
+    width: 75px;
+    height: 40px;
+    border: hidden;
+    border-radius: 2px;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #20262E;
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+    letter-spacing: 1px
+}
+
+
+
+
+@import "https://unpkg.com/open-props";
+
+button {
+    font-family: titleFont;
+    font-weight: var(--font-weight-6);
+    font-size: var(--font-size-5);
+    color: var(--gray-8);
+    background: var(--gray-0);
+    border: 0;
+    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+    transition: transform 0.1s;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button:hover {
+    --y: -10;
+    --scale: 1.1;
+    --border-scale: 1;
+    letter-spacing: 1px;
+}
+
+button:active {
+    --y: 5%;
+    --scale: 0.9;
+    --border-scale: 0.9, 0.8;
+}
+
+button:before {
+    content: "";
+    inset: calc(var(--size-3) * -1);
+    border: var(--size-2) solid var(--gray-0);
+    transform: scale(var(--border-scale, 0));
+    transition: transform 0.125s;
+
+    --angle-one: 105deg;
+    --angle-two: 290deg;
+    --spread-one: 30deg;
+    --spread-two: 40deg;
+    --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+    --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+    --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+    --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+
+    mask: conic-gradient(transparent 0 var(--start-one),
+            white var(--start-one) var(--end-one),
+            transparent var(--end-one) var(--start-two),
+            white var(--start-two) var(--end-two),
+            transparent var(--end-two));
+
+    z-index: 1;
+}
+
+
+.header-img img {
+    width: 100%;
+    height: 720px;
+    margin-top: 10%;
+    z-index: -1;
+    position: absolute;
+    top: -150px;
+}
+body{
+    height:fit-content;
+    overflow-x: hidden;
+}
+header{
+    background-color: #20262E;
+}
+.contacts{
+    margin-left: 4.5%;
+    height: 550px;
+    width: 1200px;
+    margin-top: -1%;
+    
+}
+.socials{
+    text-align: center;
+    width: 335px;
+    margin-left: 7.3%;
+    margin-top: -35%;
+    font-family: titleFont;
+}
+.socials h2{
+    letter-spacing: 2px;
+}
+.socials img{
+    width: 100%;
+    margin-left: -30%;
+}
+#websiteimg{
+    margin-top: -20%;
+}
+#website{
+    position: absolute;
+    top: 294px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+#emailimg{
+    margin-top: -110%;
+    width: 115%;
+    margin-left: -67%;
+}
+
+#email{
+    position: absolute;
+    top: 345px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+#fbimg{
+    margin-top: -96%;
+    width: 125%;
+    margin-left: -48%;
+}
+#fb{
+    position: absolute;
+    top: 407px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+#instaimg{
+    margin-top: -110%;
+    width: 130%;
+    margin-left: -45%;
+    
+}
+#insta{
+    position: absolute;
+    top: 465px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+#phoneimg1{
+    margin-top: -85%;
+    width: 110%;
+    margin-left: -66%;
+    
+}
+#insta{
+    position: absolute;
+    top: 465px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+#phone1{
+    position: absolute;
+    top: 523px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+#phoneimg2{
+    margin-top: -93%;
+    width: 110%;
+    margin-left: -66%;
+}
+#phone2{
+    position: absolute;
+    top: 580px;
+    left: 210px;
+    text-decoration: none;
+    color: #20262E;
+}
+.emailUs {
+    margin-top: -49%;
+    margin-left: 40%;
+}
+.emailUs h2{
+    font-family: titleFont ;
+}
+
+.emailForm{
+    font-family: titleFont;
+    margin-top: 5%;
+}
+.emailForm label{
+    font-size: 19px;
+    padding-top: 2%;
+}
+.emailForm input{
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 0.05px solid #c6c6c6;
+    padding-top: 2%;
+    width: 300px;
+}
+#message{
+    height: 50px; 
+    width: 600px;
+   margin-top: -0.5%;
+}
+.emailForm button{
+    margin-left: 60%;
+    margin-top: 8%;
+    width: 150px;
+    border-radius: 0px;
+    border: hidden;
+}
+.emailForm button:hover{
+    cursor: pointer;
+    background-color: #c6c6c6;
+    color: #20262E;
+    cursor: pointer;
+    --y: -1;
+    --scale: 1;
+    --border-scale: 1;
+    letter-spacing: 0px;
+}
+.footer{
+    width: 1350px;
+    background-color: #20262E;
+    height: 310px;
+    margin-top: 6%;
+}
+
+
+
+
+
+.footerPart1{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 65%;
+    top: 620px;
+}
+.footerPart1 img{
+    width: 100%;
+    height: 100%;
+}
+.footerPart2{
+    position: absolute;
+    left: 35%;
+    top: 770px;
+    color: #d1d5db;
+    font-family: titleFont;
+}
+.footerPart2 h3{
+    font-size: 32px;
+    
+}
+.footerPart2 p{
+    font-size: 13px;
+    
+}
+
+
+.footerPart3{
+    position: absolute;
+    left: 5%;
+    top: 760px;
+    color: #d1d5db;
+    font-family: titleFont;
+}
+.footerPart3 a{
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 1%;
+}
+.footerPart3 h3{
+    font-size: 32px;
+    
+}
+.copyright p{
+    position: absolute;
+    left: 44%;
+    top: 995px;
+    font-size: 13px;
+    color: #d1d5db;
+    font-family: titleFont;
+}
