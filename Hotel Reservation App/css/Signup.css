@@ -1,0 +1,95 @@
+@font-face {
+    font-family: NavFont;
+    src: url(../fonts/GentiumBookPlus-Bold.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/ElMessiri-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(../imgs/signupbg.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 1300px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.mainsection {
+    width: 500px;
+    height: 550px;
+    border-radius: 7px;
+    border: hidden;
+    position: absolute;
+    top: 85px;
+    left: 410px;
+    background-color: white;
+    box-shadow: 3px 4px 10px #20262E;
+    color: #20262E;
+
+}
+
+.mainsection h1 {
+    font-family: titleFont;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.signup {
+    font-family: titleFont;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.signup label {
+    font-size: 18px;
+}
+
+.signup input {
+    width: 250px;
+    margin-top: 4px;
+    height: 30px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 0.05px solid #c6c6c6;
+    font-family: titleFont;
+}
+
+#status1,
+#status2,
+#status3 {
+    width: 25px;
+    height: 13px;
+}
+
+#st {
+    font-size: 15px;
+}
+
+.signup button {
+    border-radius: 0px;
+    border: hidden;
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 200px;
+    height: 40px;
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+    box-shadow: 0 0 20px #eee;
+    transition: 0.2s;
+    background-size: 200% auto; 
+    color: whitesmoke;
+
+}
+
+
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
