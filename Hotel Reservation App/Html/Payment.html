@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lotus | Payment</title>
+    <link rel="stylesheet" href="../css/Payment.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+
+  </head>
+  <body>
+    <form id="myForm" action="" method="post" autocomplete = "off">
+      <h1 align = center >Payment</h1>
+
+      <div style="text-align:center;">
+        <span class="step" id = "step-1">1</span>
+        <span class="step" id = "step-2">2</span>
+        <span class="step" id = "step-3">3</span>
+        <span class="step" id = "step-4">4</span>
+      </div>
+
+      <div class="tab" id = "tab-1">
+        <p>Card Number:</p>
+        <div>
+          <input type = "text" placeholder="**** **** **** ****" name="firstname"  >
+        </div>
+        <div class="index-btn-wrapper">
+          <div class="btn-grad" id="n1" onclick="run(1, 2);"> Next</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-2">
+        <p>Expires on :</p>
+        <input type = "month" placeholder="MM" name="month">
+        <div class="index-btn-wrapper">
+          <div class="btn-grad" onclick="run(2, 1);">Previous</div>
+          <div class="btn-grad" id="n2" onclick="run(2, 3);">Next</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-3">
+        <p>Full Name:</p>
+        <input type = "text" placeholder="Full Name" name="name" >
+        <div class="index-btn-wrapper">
+          <div class="btn-grad" onclick="run(3, 2);">Previous</div>
+          <div class="btn-grad" id="n2" onclick="run(3, 4);">Next</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-4">
+        <p>Email Address:</p>
+        <input type = "email" placeholder="Email Address" name="email">
+        <div class="index-btn-wrapper">
+          <div class="btn-grad" onclick="run(4, 3);">Previous</div>
+          <div class="btn-grad"  id="n2" onclick="run(4, 5);">Next</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-5">
+        <div class="index-btn-wrapper">
+          <div class="btn-grad" onclick="run(5, 4);">Previous</div>
+          <button class = "btn-grad" id="nf" type="submit" name="submit" style="border: none
+          ; width: 100px;">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      
+      // Default tab
+      $(".tab").css("display", "none");
+      $("#tab-1").css("display", "block");
+
+      function run(hideTab, showTab){
+        
+
+        // Progress bar
+        for (i = 1; i < showTab; i++){
+          $("#step-"+i).css("opacity", "1");
+        }
+
+        // Switch tab
+        $("#tab-"+hideTab).css("display", "none");
+        $("#tab-"+showTab).css("display", "block");
+        $("input").css("background", "#fff");
+      }
+    </script>
+  </body>
+</html>

@@ -17,6 +17,30 @@
     }
 }
 
+.btn-grad {
+    background-image: linear-gradient(to right, #ACABAB 0%, #E7C2BB 51%, #5F5F5F 100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 0px;
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+    left: 1180px;
+    display: block;
+    
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
 body {
     overflow-x: hidden;
     height: 3500px;
@@ -197,6 +221,13 @@ li a:hover {
     left: 1200px;
     letter-spacing: 1px
 }
+a{
+    text-decoration: none;
+    color: white
+}
+a:hover{
+    color: white;
+}
 
 
 
@@ -220,10 +251,10 @@ button {
 }
 
 button:hover {
-    --y: -10;
-    --scale: 1.1;
+    --y: 0;
+    --scale: 1;
     --border-scale: 1;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 button:active {
@@ -258,7 +289,7 @@ button:before {
 }
 
 
-#dots:hover{
+#dots:hover {
     cursor: pointer;
 }
 
@@ -473,6 +504,7 @@ video::-webkit-media-controls {
     background-color: #F2A154;
     color: #20262E;
     width: 100px;
+    height: 40px;
 }
 
 #signBtn {
@@ -483,7 +515,13 @@ video::-webkit-media-controls {
     font-family: titleFont;
     background-color: #F2A154;
     color: #20262E;
+    height: 40px;
+
     width: 100px;
+}
+#signBtn:hover, #bookBtn:hover{
+    cursor: pointer;
+    
 }
 
 .roomsCheck {
@@ -516,7 +554,7 @@ video::-webkit-media-controls {
     background-color: #B68973;
 }
 
-.roomsCheck button:hover{
+.roomsCheck button:hover {
     --y: -1;
     --scale: 1;
     --border-scale: 1;
@@ -531,32 +569,35 @@ video::-webkit-media-controls {
 
 
 
-.imageRes:hover{
+.imageRes:hover {
     cursor: pointer;
 }
 
 
 
-.textRes{
+.textRes {
     opacity: 0;
     transition: all 0.2s ease-in;
-   position: absolute;
-   top: 2600px;
-    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 2600px;
+    background-color: rgba(255, 255, 255, 0.3);
     width: 32%;
     height: 90%;
     box-sizing: border-box;
     font-family: titleFont;
     text-align: center;
 }
-.textRes{
-    padding-top :17%;
+
+.textRes {
+    padding-top: 17%;
 }
-.containerRestaurant:hover .textRes{
+
+.containerRestaurant:hover .textRes {
     opacity: 1;
     cursor: pointer;
 }
-.containerRestaurant{
+
+.containerRestaurant {
     width: 400px;
     height: 600px;
     margin-left: 5%;
@@ -564,7 +605,8 @@ video::-webkit-media-controls {
     box-shadow: 2px 5px 5px #20262E;
 
 }
-.containerRestaurant img{
+
+.containerRestaurant img {
     width: 100%;
     height: 100%;
 }
@@ -574,26 +616,29 @@ video::-webkit-media-controls {
 
 
 
-.textCafé{
+.textCafé {
     opacity: 0;
     transition: all 0.2s ease-in;
-   position: absolute;
-   top: 2605px;
-    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 2605px;
+    background-color: rgba(255, 255, 255, 0.3);
     width: 31%;
     height: 43%;
     box-sizing: border-box;
     font-family: titleFont;
     text-align: center;
 }
-.textCafé{
-    padding-top :8%;
+
+.textCafé {
+    padding-top: 8%;
 }
-.containerCafé:hover .textCafé{
+
+.containerCafé:hover .textCafé {
     opacity: 1;
     cursor: pointer;
 }
-.containerCafé{
+
+.containerCafé {
     width: 400px;
     height: 300px;
     margin-left: 68.5%;
@@ -601,7 +646,8 @@ video::-webkit-media-controls {
     box-shadow: 2px 5px 5px #20262E;
 
 }
-.containerCafé img{
+
+.containerCafé img {
     width: 100%;
     height: 100%;
 }
@@ -613,26 +659,29 @@ video::-webkit-media-controls {
 
 
 
-.textFun{
+.textFun {
     opacity: 0;
     transition: all 0.2s ease-in;
-   position: absolute;
-   top: 2905px;
-    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 2905px;
+    background-color: rgba(255, 255, 255, 0.3);
     width: 31%;
     height: 43%;
     box-sizing: border-box;
     font-family: titleFont;
     text-align: center;
 }
-.textFun{
-    padding-top :8%;
+
+.textFun {
+    padding-top: 8%;
 }
-.containerFun:hover .textFun{
+
+.containerFun:hover .textFun {
     opacity: 1;
     cursor: pointer;
 }
-.containerFun{
+
+.containerFun {
     width: 400px;
     height: 300px;
     margin-left: 68.5%;
@@ -640,19 +689,21 @@ video::-webkit-media-controls {
     box-shadow: 2px 5px 5px #20262E;
 
 }
-.containerFun img{
+
+.containerFun img {
     width: 100%;
     height: 100%;
 }
 
 
-.textPart img{
+.textPart img {
     width: 30%;
     position: absolute;
     top: 2550px;
     left: 470px;
 }
-.textPart article{
+
+.textPart article {
     width: 30%;
     position: absolute;
     top: 2880px;
@@ -662,7 +713,8 @@ video::-webkit-media-controls {
     font-size: 18px;
     text-align: center;
 }
-.textPart button{
+
+.textPart button {
     position: absolute;
     top: 3030px;
     left: 615px;
@@ -670,7 +722,8 @@ video::-webkit-media-controls {
     border: hidden;
     font-family: titleFont;
 }
-.textPart button:hover{
+
+.textPart button:hover {
     cursor: pointer;
     --y: -1;
     --scale: 1;
@@ -687,7 +740,7 @@ video::-webkit-media-controls {
 
 
 
-.footer{
+.footer {
     width: 1350px;
     background-color: #20262E;
     height: 320px;
@@ -698,52 +751,59 @@ video::-webkit-media-controls {
 
 
 
-.footerPart1{
+.footerPart1 {
     width: 400px;
     height: 400px;
     position: absolute;
     left: 65%;
     top: 3205px;
 }
-.footerPart1 img{
+
+.footerPart1 img {
     width: 100%;
     height: 100%;
 }
-.footerPart2{
+
+.footerPart2 {
     position: absolute;
     left: 35%;
     top: 3358px;
     color: #d1d5db;
     font-family: titleFont;
 }
-.footerPart2 h3{
+
+.footerPart2 h3 {
     font-size: 32px;
-    
+
 }
-.footerPart2 p{
+
+.footerPart2 p {
     font-size: 13px;
-    
+
 }
 
 
-.footerPart3{
+.footerPart3 {
     position: absolute;
     left: 5%;
     top: 3355px;
     color: #d1d5db;
     font-family: titleFont;
 }
-.footerPart3 a{
+
+.footerPart3 a {
     color: #d1d5db;
     text-decoration: none;
     font-size: 15px;
     margin-left: 1%;
 }
-.footerPart3 h3{
+
+.footerPart3 h3 {
     font-size: 32px;
-    
+
 }
-.copyright p{
+
+.copyright p {
     position: absolute;
     left: 44%;
     top: 3587px;

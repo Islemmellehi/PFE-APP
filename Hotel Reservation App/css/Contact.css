@@ -29,6 +29,38 @@ nav {
     margin-left: 19%;
 
 }
+.btn-grad {
+    background-image: linear-gradient(to right, #ACABAB 0%, #E7C2BB 51%, #5F5F5F 100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 0px;
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+    font-size: 15px;
+    height: 30px;
+    left: 1180px;
+    display: block;
+    width: 100px;
+    font-size: 15px
+    
+}
+.btn-grad a{
+    text-decoration: none;
+    color: white;
+}
+.btn-grad a:hover{
+    color: white;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
 
 ul {
     list-style: none;
@@ -72,19 +104,7 @@ li a:hover {
     border-bottom-width: 20px;
 }
 
-.btn-sign {
-    width: 75px;
-    height: 40px;
-    border: hidden;
-    border-radius: 2px;
-    font-size: 13px;
-    background-color: #ffffff;
-    color: #20262E;
-    position: absolute;
-    top: 50px;
-    left: 1200px;
-    letter-spacing: 1px
-}
+
 
 
 
@@ -108,10 +128,10 @@ button {
 }
 
 button:hover {
-    --y: -10;
-    --scale: 1.1;
+    --y: 0;
+    --scale: 1;
     --border-scale: 1;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 button:active {
@@ -153,6 +173,9 @@ button:before {
     z-index: -1;
     position: absolute;
     top: -150px;
+}
+a{
+    text-decoration: none;
 }
 body{
     height:fit-content;
