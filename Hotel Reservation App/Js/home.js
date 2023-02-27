@@ -26,7 +26,7 @@ const goNext = () => {
 var header = document.getElementById("Background");
 
 function HeaderBgChange() {
-  header.style.backgroundColor = "#20262E";
+  header.style.backgroundColor = "#4E6E81";
   if (scrollY == screenTop) {
     header.style.backgroundColor = "transparent";
   }

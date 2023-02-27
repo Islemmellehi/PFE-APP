@@ -7,8 +7,9 @@
     font-family: titleFont;
     src: url(../fonts/ElMessiri-VariableFont_wght.ttf);
 }
+
 header {
-    height: 120px;
+    height: 100px;
     z-index: 1;
     top: 0;
     position: sticky;
@@ -17,41 +18,47 @@ header {
 
 
 #logo-img {
-    width: 20%;
+    width: 15%;
 
-    margin-top: -5%;
+    margin-top: -3%;
     margin-left: -2.5%;
     z-index: 1;
 }
 
 nav {
-    margin-top: -10%;
-    margin-left: 19%;
+    margin-top: -8.5%;
+    margin-left: 11%;
 
 }
+
 .btn-grad {
-    background-image: linear-gradient(to right, #ACABAB 0%, #E7C2BB 51%, #5F5F5F 100%);
+    background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
     text-align: center;
-    transition: 0.5s;
+    transition: 0.3s;
     background-size: 200% auto;
     color: white;
-    border-radius: 0px;
+    border-radius: 3px;
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 1200px;
     font-size: 15px;
     height: 30px;
-    left: 1180px;
+    left: 1200px;
     display: block;
     width: 100px;
-    font-size: 15px
-    
+    height: 38px;
+    font-size: 15px;
+    font-family: titleFont;
+    letter-spacing: 2px;
+
 }
-.btn-grad a{
+
+.btn-grad a {
     text-decoration: none;
     color: white;
 }
-.btn-grad a:hover{
+
+.btn-grad a:hover {
     color: white;
 }
 
@@ -60,6 +67,10 @@ nav {
     /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+}
+
+#Background {
+    background-color: #0f1922;
 }
 
 ul {
@@ -174,225 +185,363 @@ button:before {
     position: absolute;
     top: -150px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-body{
-    height:fit-content;
+
+body {
+    height: fit-content;
     overflow-x: hidden;
 }
-header{
+
+header {
     background-color: #20262E;
 
 }
-.contacts{
+
+.contacts {
     margin-left: 4.5%;
     height: 550px;
     width: 1200px;
     margin-top: -1%;
-    
+
 }
-.socials{
+
+.socials {
     text-align: center;
     width: 335px;
-    margin-left: 7.3%;
+    margin-left: 65%;
     margin-top: -35%;
     font-family: titleFont;
 }
-.socials h2{
+
+.socials h2 {
     letter-spacing: 2px;
 }
-.socials img{
+
+.socials img {
     width: 100%;
     margin-left: -30%;
 }
-#websiteimg{
+
+#websiteimg {
     margin-top: -20%;
 }
-#website{
+
+#website {
     position: absolute;
     top: 294px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
-#emailimg{
+
+#emailimg {
     margin-top: -110%;
     width: 115%;
     margin-left: -67%;
 }
 
-#email{
+#email {
     position: absolute;
     top: 345px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
-#fbimg{
+
+#fbimg {
     margin-top: -96%;
     width: 125%;
     margin-left: -48%;
 }
-#fb{
+
+#fb {
     position: absolute;
     top: 407px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
-#instaimg{
+
+#instaimg {
     margin-top: -110%;
     width: 130%;
     margin-left: -45%;
-    
+
 }
-#insta{
+
+#insta {
     position: absolute;
     top: 465px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
-#phoneimg1{
+
+#phoneimg1 {
     margin-top: -85%;
     width: 110%;
     margin-left: -66%;
-    
+
 }
-#insta{
+
+#insta {
     position: absolute;
     top: 465px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
-#phone1{
+
+#phone1 {
     position: absolute;
     top: 523px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
-#phoneimg2{
+
+#phoneimg2 {
     margin-top: -93%;
     width: 110%;
     margin-left: -66%;
 }
-#phone2{
+
+#phone2 {
     position: absolute;
     top: 580px;
-    left: 210px;
+    left: 1050px;
     text-decoration: none;
     color: #20262E;
 }
+
 .emailUs {
-    margin-top: -49%;
-    margin-left: 40%;
-}
-.emailUs h2{
-    font-family: titleFont ;
+    margin-top: -10%;
+    margin-left: 7%;
 }
 
-.emailForm{
+.emailUs h2 {
+    font-family: titleFont;
+    margin-left: 16%;
+    letter-spacing: 5px;
+    font-size: 55px;
+    color: #20262E;
+}
+
+.emailForm {
     font-family: titleFont;
     margin-top: 5%;
 }
-.emailForm label{
+
+.emailForm label {
     font-size: 19px;
-    padding-top: 2%;
+
 }
-.emailForm input{
+
+.emailForm input {
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
     border-bottom: 0.05px solid #c6c6c6;
     padding-top: 2%;
-    width: 300px;
+    width: 225px;
 }
-#message{
-    height: 50px; 
-    width: 600px;
-   margin-top: -0.5%;
+
+#sub {
+    position: absolute;
+    left: 480px;
+    top: 300px;
+
 }
-.emailForm button{
-    margin-left: 60%;
+
+.findUs {
+    position: absolute;
+    left: 900px;
+    top: 150px;
+    background-color: #2c3e50;
+    width: 380px;
+    height: 500px;
+    border: hidden;
+    border-radius: 10px;
+}
+
+.findUs h2 {
+    font-size: 55px;
+    font-family: titleFont;
+    color: #20262E;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: whitesmoke;
+}
+
+.findUs img {
+    width: 10%;
     margin-top: 8%;
+    margin-left: 9%;
+
+}
+
+.f1 p {
+    margin-left: 27%;
+    margin-top: -8%;
+    font-size: 20px;
+}
+
+.f2 p {
+    font-size: 20px;
+    margin-left: 27%;
+    margin-top: -8%;
+}
+
+.f3 p {
+    font-size: 20px;
+    margin-left: 27%;
+    margin-top: -8%;
+}
+
+.f4 p {
+    font-size: 20px;
+    margin-left: 27%;
+    margin-top: -8%;
+}
+
+.findUs p {
+    color: whitesmoke;
+    font-family: titleFont;
+}
+
+.f1 {
+    margin-top: 25%;
+}
+
+#subject {
+    position: absolute;
+    left: 480px;
+    top: 325px;
+}
+
+#message {
+    height: 50px;
+    width: 620px;
+    margin-top: -0.5%;
+}
+
+.emailForm button {
+    margin-left: 22%;
+    margin-top: 8.7%;
     width: 150px;
     border-radius: 0px;
     border: hidden;
+    height: 40px;
+    letter-spacing: 2px;
+    width: 120px;
+    font-size: 16px;
+    background-color: #20262E;
 }
-.emailForm button:hover{
+
+.emailForm button:hover {
     cursor: pointer;
     background-color: #c6c6c6;
     color: #20262E;
     cursor: pointer;
-    --y: -1;
-    --scale: 1;
-    --border-scale: 1;
-    letter-spacing: 0px;
+    
 }
-.footer{
+
+.footer {
     width: 1350px;
-    background-color: #20262E;
+    background-color: #0f1922;
     height: 310px;
-    margin-top: 6%;
+    margin-top: 7%;
 }
 
 
 
 
 
-.footerPart1{
+.footerPart1 {
     width: 400px;
     height: 400px;
     position: absolute;
     left: 65%;
     top: 620px;
 }
-.footerPart1 img{
+
+.footerPart1 img {
     width: 100%;
     height: 100%;
 }
-.footerPart2{
+
+.footerPart2 {
     position: absolute;
     left: 35%;
     top: 770px;
-    color: #d1d5db;
+    color: whitesmoke;
     font-family: titleFont;
 }
-.footerPart2 h3{
+
+.footerPart2 h3 {
     font-size: 32px;
-    
+
 }
-.footerPart2 p{
+
+.footerPart2 p {
     font-size: 13px;
-    
+
 }
 
 
-.footerPart3{
+.footerPart3 {
     position: absolute;
     left: 5%;
     top: 760px;
-    color: #d1d5db;
+    color: whitesmoke;
     font-family: titleFont;
 }
-.footerPart3 a{
-    color: #d1d5db;
+
+.footerPart3 a {
+    color: whitesmoke;
     text-decoration: none;
     font-size: 15px;
     margin-left: 1%;
 }
-.footerPart3 h3{
+
+.footerPart3 h3 {
     font-size: 32px;
-    
+
 }
-.copyright p{
+
+.copyright p {
     position: absolute;
     left: 44%;
     top: 995px;
     font-size: 13px;
-    color: #d1d5db;
+    color: whitesmoke;
     font-family: titleFont;
+}
+
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.findUs {
+    background: linear-gradient(-45deg, #b4b5b6, #06283D, #2B4865, #7A86B6);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
 }
