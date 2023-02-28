@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #b4b5b6, #515154, #9a9b9c, #777479);
+    background: linear-gradient(-45deg, #b4b5b6, #144272, #a5b0bc, #2C74B3);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     height: 100vh;
@@ -35,11 +35,11 @@ form {
     background: #ffffff;
     margin: 100px auto;
     padding: 15px 40px 40px 40px;
-    width: 50%;
-    margin-top: 12%;
+    width: 60%;
     font-family: titleFont;
     border-radius: 5px;
     box-shadow: 3px 4px 10px #20262E;
+    height: 47%;
 
 }
 
@@ -47,9 +47,14 @@ form {
     font-size: 20px;
     margin: 0 0 10px 0;
 }
+form{
+    margin-top: 12%;
+}
 form  h1{
     letter-spacing: 5px;
     font-family: titleFont;
+    font-size: 50px;
+    color: #20262E;
 }
 
 input {
@@ -88,9 +93,8 @@ input {
     height: 30px;
     width: 30px;
     line-height: 30px;
-    margin: 0 2px;
     color: white;
-    background: #003973;
+    background: #20262E;
     border-radius: 50%;
     display: inline-block;
     opacity: 0.25;
@@ -99,9 +103,9 @@ input {
 
 
 .btn-grad {
-    background-image: linear-gradient(to right, #003973 0%, #E5E5BE 51%, #003973 100%);
+    background-image: linear-gradient(to right, #003973 0%, #82a0ad 51%, #003973 100%);
     text-align: center;
-    margin-left: 30%;
+    margin-left: 32%;
     margin-top: 4%;
     margin-bottom: -4%;
     width: 100px;
@@ -109,11 +113,12 @@ input {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
-    font-size: 12px;
+    font-size: 15px;
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 20px #eee;
     display: block;
+    border-radius: 5px;
 }
 #n1{
     margin-left: 42%;

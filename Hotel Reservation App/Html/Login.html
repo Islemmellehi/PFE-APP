@@ -14,21 +14,33 @@
     <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/Login.css" />
   </head>
-  <body>
-    <section class="mainsection">
-        <h1>Log into your account</h1>
-        <form action="" class="signup"> 
-            <label for="full name" id="lb" style="margin-top: 10px;">Full Name :</label><br>
-            <input type="text" placeholder="Enter your name.."><br>
-            
-            <label for="email"id="lb"  style="margin-top: 20px;" >Email :</label><br>
-            <input type="email" name="email" id="email" placeholder="Enter your email .."> <br> <br>
-            <label for="password">Password : </label> <br>
-            <input type="password" placeholder="Enter your password .."> <br>
-            
-            <button type="submit" class="btn-grad">Log in</button>
-        </form>
-        <a href="../Html/SignUp.html" id="already">Don't have an account ?</a>
-    </section>
-  </body>
+  <section class="mainsection">
+    <h1><b>Log into your account</b></h1>
+    <form action="" class="signup">
+      
+
+      <span id="s3">
+        <img src="../imgs/icons/emailnew.png" alt="" />
+      </span>
+      <input 
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email .."
+      />
+      <br />
+      <span id="s4">
+        <img src="../imgs/icons/passwordnew.png" alt="" />
+      </span>
+      <input type="password" id="i4" placeholder="Enter your password .." /> <br />
+      
+      <button type="submit" class="btn-grad">Log In</button>
+    </form>
+    <a href="../Html/SignUp.html" id="already">Don't have an account ?</a>
+  </section>
+  <section class="added">
+    <img src="../imgs/back.png" id="img1" alt="">
+    <p>We appreciate you creating an account and coming back to log in.</p>
+  </section>
+</body>
 </html>

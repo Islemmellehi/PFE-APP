@@ -16,24 +16,48 @@
   </head>
   <body>
     <section class="mainsection">
-        <h1>Create an account</h1>
-        <form action="" class="signup"> 
-            <label for="full name" id="lb" style="margin-top: 10px;">Full Name :</label><br>
-            <input type="text" placeholder="Enter your name.."><br>
-            <label for="number"id="lb"  style="margin-top: 20px;">Phone Number :</label><br>
-            <input type="text" placeholder="Enter your phone number .."><br>
-            <label for="email"id="lb"  style="margin-top: 20px;" >Email :</label><br>
-            <input type="email" name="email" id="email" placeholder="Enter your email .."> <br> <br>
-            <label for="password">Password : </label> <br>
-            <input type="password" placeholder="Enter your password .."> <br>
-            <label for="status"id="lb"  style="margin-top: 20px;">Civil Status:</label><br>
-            <input type="radio" name="status" id="status1"><label for="single" id="st">Single</label> <br>
-            <input type="radio" name="status" id="status2"><label for="single" id="st">Married</label> <br>
-            <input type="radio" name="status" id="status3"><label for="single" id="st">Married with kids</label> <br>
-            
-            <button type="submit" class="btn-grad">Submit</button>
-        </form>
-        <a href="../Html/Login.html" id="already">Already have an account ?</a>
+      <h1><b>Create an account</b></h1>
+      <form action="" class="signup">
+        <span id="s1">
+          <img src="../imgs/icons/profilenew.png" id="im1" alt="" />
+        </span>
+        <input type="text" id="i1" placeholder="Enter your name.." /><br />
+        <span id="s2">
+          <img src="../imgs/icons/phonenew.png" alt="" />
+        </span>
+        <input type="text" id="i2" placeholder="Enter your phone number .." /><br />
+        <span id="s3">
+          <img src="../imgs/icons/emailnew.png" alt="" />
+        </span>
+        <input 
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email .."
+        />
+        <br />
+        <span id="s4">
+          <img src="../imgs/icons/passwordnew.png" alt="" />
+        </span>
+        <input type="password" id="i4" placeholder="Enter your password .." /> <br />
+        <span id="s5">
+          <img src="../imgs/icons/status.png" alt="" />
+        </span>
+        <select name="status" id="statuschoice">
+          <option value="single">Single</option>
+          <option value="couple">Couple</option>
+          <option value="married">Married</option>
+          <option value="kids">Married with kids</option>
+        </select>
+        <button type="submit" class="btn-grad">Submit</button>
+      </form>
+      <a href="../Html/Login.html" id="already">Already have an account ?</a>
+    </section>
+    <section class="added">
+      <img src="../imgs/1.png" id="img1" alt="">
+      <img src="../imgs/2.png" id="img2" alt="">
+      <img src="../imgs/3.png" id="img3" alt="">
+      <p>By creating an account, you help us get to know you better in order to provide you with the best recommendations possible.</p>
     </section>
   </body>
 </html>

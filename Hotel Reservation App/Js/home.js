@@ -26,11 +26,14 @@ const goNext = () => {
 var header = document.getElementById("Background");
 
 function HeaderBgChange() {
-  header.style.backgroundColor = "#4E6E81";
+  header.style.backgroundColor = "#0f1922";
   if (scrollY == screenTop) {
     header.style.backgroundColor = "transparent";
   }
 }
+
+
+
 
 let clip = document.getElementById("videoAD");
 clip.addEventListener("mouseover", function (e) {
