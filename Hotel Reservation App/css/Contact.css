@@ -27,9 +27,10 @@ header {
 
 nav {
     margin-top: -8.5%;
-    margin-left: 11%;
+    margin-left: 8.5%;
 
 }
+
 
 .btn-grad {
     background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
@@ -97,22 +98,10 @@ li a {
 }
 
 li a:hover {
-    color: rgb(172, 172, 172);
-    width: 102%;
-    height: 20px;
-    transition: 0.3s;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 6px;
+  color: #bec5cc;
+  transition: 0.3s;
+  letter-spacing: 3px;
 
-    color: #fff;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 10px;
-
-    color: #1a1a1a;
-    border-bottom: #d1d5db;
-    border-bottom-width: 20px;
 }
 
 
