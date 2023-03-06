@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+
+  
+    <title> Lotus | Insights </title>
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="\CSS\insights.css"> 
+    
+    
+    <!-- bootstrap cdn  here -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+crossorigin="anonymous"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+   integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+      
+    
+
+     <!-- AOS ANIMATED ON SCROLL-->
+
+      
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+<!--animated css-->
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<!--LIGHTBOX-->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+   
+</head>
+
+    <body class="bg-light" > 
+
+       
+ 
+        <header id="Background">
+          <div class="header-components">
+            <div class="logo-image">
+              <img src="../IMGS/logo2.png" alt="Logo" id="logo-img" />
+            </div>
+            <div class="main-menu d-none d-lg-block" id="outerclass">
+              <span class="d-inline-block d-lg-none"
+                ><a
+                  href="#"
+                  class="text-primary site-menu-toggle js-menu-toggle py-5"
+                  ><span class="icon-menu h3 text-white"></span></a
+              ></span>
+              
+              <nav 
+                id="navbar"
+                class="site-navigation text-right ml-auto d-none d-lg-block"
+                role="navigation"
+              >
+                <ul
+                  id="navigation"
+                  class="site-menu main-menu js-clone-nav ml-auto"
+                >
+                  <li>
+                    <b><a class="active" href="Home.html">Home</a></b>
+                  </li>
+                  <li>
+                    <b><a href="ROOM.html">Rooms</a></b>
+                  </li>
+                  <li>
+                    <b><a href="insights.html">Insights</a></b>
+                  </li>
+                  <li>
+                    <b><a href="reservation.html">Reservation</a></b>
+                  </li>
+                  <li>
+                    <b><a href="../Html/Contact.html">Contact</a></b>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="button-sign">
+            <button class="btn-sign"><a href="../Html/SignUp.html">Sign up</a> </button>
+          </div>
+         
+       
+               
+  
+ </header>
+
+ <style>
+
+
+  a{
+    text-decoration: none;
+    color:#20262E;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .footerPart1{
+    top: 6900px;
+  }
+  .footerPart2{
+    top: 7020px;
+  }
+  .footerPart3{
+    top: 7020px;
+  }
+  .copyright p{
+    top: 7270px;
+  }
+  .footer{
+    height: 350px;
+    margin-top: 9.5%;
+  }
+ </style>
+
+<!-- header pic -->
+<section class="intro">
+  <div class="intro-slideshow">
+    <img src="\IMGS\headerINS1.jpg">
+    <img src="\IMGS\fond1.jpg">
+    <img src="\IMGS\head.jpg">
+
+  </div>
+
+  <div class="intro-header">
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="intro text-center">
+                    <div class="hr-line"></div>
+                   
+                    <h1 class="display-4">OUR GALLERY</h1>
+                    <p class="mx-auto">a collection of pictures and memories of LOTUS's </p>
+                </div>
+            </div>
+        </div>
+        </div>
+       </div>
+     
+      </section>
+
+  <div class="about">
+    <div class="row">
+      <div class="col">
+        <div class="title text-center">
+          <h4> <strong
+            > A closer look</strong></h4>
+          <h2>To LOTUS</h2>
+          <span class="border"></span>
+          <h4>AMENETIES </h4>
+        </div>
+      </div>
+    </div></div>
+<!-- ======= Gallery Section ======= -->
+
+ 
+
+
+<section>
+  <div id="gallery" class="gallery" data-aos="fade-up" data-aos-delay="50">
+  
+
+    <div class="row g-0 ">
+
+      <div class="col-lg-3 col-md-4">
+
+  <div class="gallery__item gallery__item--first gallery__item--2x">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\fond2.jpg"
+      data-gallery="gallery1"
+     
+    >
+    <img src="\IMGS\fond2.jpg" alt="" class="img-fluid">
+</a>
+
+  
+  </div>
+ </div>
+ <div class="col-lg-3 col-md-4"> 
+  <div class="gallery__item gallery__item--2">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\bar3.jpg"
+      data-gallery="gallery1"
+      
+    >
+    <img src="\IMGS\bar3.jpg" alt="" class="img-fluid">
+  </a>
+  
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4">
+  <div class="gallery__item gallery__item--3">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\insights4.jpg"
+      data-gallery="gallery1"
+      
+    ><img src="\IMGS\insights4.jpg" alt="" class="img-fluid"></a>
+  
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4">
+  <div class="gallery__item gallery__item--4">
+    <a
+      class="gallery__link glightbox glightbox"
+      href="\IMGS\insights3.jpg"
+      data-gallery="gallery1"
+      
+    ><img src="\IMGS\insights3.jpg" alt="" class="img-fluid"></a>
+   
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4">
+  <div class="gallery__item gallery__item--5">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\single.jpg"
+      data-gallery="gallery1"
+      
+    ><img src="\IMGS\single.jpg" alt="" class="img-fluid"></a>
+ 
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4">
+  <div class="gallery__item gallery__item--6">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\double.jpg"
+      data-gallery="gallery1"
+      
+    ><img src="\IMGS\double.jpg" alt="" class="img-fluid"></a>
+   
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4">
+  <div class="gallery__item gallery__item--7">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\outresto.jpg"
+      data-gallery="gallery1"
+      
+    ><img src="\IMGS\outresto.jpg" alt="" class="img-fluid"></a>
+   
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4">
+  <div class="gallery__item gallery__item--8">
+    <a
+      class="gallery__link glightbox"
+      href="\IMGS\triple33.png"
+      data-gallery="gallery1"
+      
+    ><img src="\IMGS\triple33.png" alt="" class="img-fluid"></a>
+   
+  </div>
+</div>
+</div>
+
+</div>
+</section>
+
+<div class="about3">
+  <div class="row">
+    <div class="col">
+      <div class="title3 text-center">
+        <h4> <strong
+          > MORE</strong></h4>
+        <h2> DETAILS </h2>
+        <span class="border3"></span>
+       
+      </div>
+    </div>
+  </div></div> 
+
+
+
+  <section class="RANDB">
+    <div id="restaurant-menu3">
+      <div class="section-title text-center center">
+        <div class="overlay">
+          <h1> Rooms</h1>
+          <span class="border"></span>
+          
+          <p> want more details ? 
+           </p>
+           <div class="btn-room">
+            <a href="ROOM.html"  class="butn-rms" role="button" > Rooms </a> 
+    
+            
+          </div>
+        </div>
+      
+      </div> 
+      </div>
+    </section>
+        <section class="artists-section section-padding" id="section_3">
+          <div class="container">
+              <div class="row justify-content-center">
+    
+                
+    
+                  <div class="col-lg-5 col-12">
+                      <div class="artists-thumb">
+                          <div class="artists-image-wrap" 
+                          >  
+                              <img src="/IMGS/slider1.jpg"
+                                  class="artists-image img-fluid">
+                          </div>
+    
+                          <div class="artists-hover">
+                              <p>
+                                <strong>you get to choose the view </strong>
+                                  
+                              </p>
+
+                              <div class="btn-room1">
+                                <a href="reservation.html"  class="butn-rms1" role="button" >BOOK NOW </a> </div>
+                           
+                          </div>
+                      </div>
+                  </div>
+    
+                  <div class="col-lg-5 col-12">
+                      <div class="artists-thumb">
+                          <div class="artists-image-wrap">
+                              <img src="/IMGS/suiteJN.jpg "
+                                  class="artists-image img-fluid">
+                          </div>
+    
+                          <div class="artists-hover">
+                              <p>
+                                  <strong> our suites</strong>
+                                  
+                              </p>
+    
+                              <div class="btn-room1">
+                                <a href="reservation.html"  class="butn-rms1" role="button" >BOOK NOW </a> </div>
+                          </div>
+                      </div>
+    
+                      <div class="artists-thumb">
+                          <img src="\IMGS\double1.jpg"
+                              class="artists-image img-fluid">
+    
+                          <div class="artists-hover">
+                              <p>
+                                  <strong> our suites </strong>
+                                 
+                              </p>
+    
+                              <div class="btn-room1">
+                                <a href="reservation.html"  class="butn-rms1" role="button" >BOOK NOW </a> </div>
+                          </div>
+                      </div>
+           
+                    
+                </div>
+              </div>
+          </div>
+      </section>
+
+    <section class="RANDB">
+<div id="restaurant-menu">
+  <div class="section-title text-center center">
+    <div class="overlay">
+      <h1> Dining and Drinks</h1>
+      <span class="border"></span>
+      <h4 class="font">Unite + Share + Enjoy</h4>
+      <p>LOTUS's Bar and restaurant are the perfect meet-up spot for an afternoon refreshment, <br>a pre-dinner rendezvous, or a nightcap under the stars.<br> Ask our talented mixologists and chefs for recommendations that may suit your mood.  </p>
+    </div>
+  </div> 
+  </div>
+</section>
+    <section class="artists-section section-padding" id="section_3">
+      <div class="container">
+          <div class="row justify-content-center">
+
+            
+
+              <div class="col-lg-5 col-12">
+                  <div class="artists-thumb">
+                      <div class="artists-image-wrap" 
+                      >  
+                          <img src="/IMGS/barmen.jpg"
+                              class="artists-image img-fluid">
+                      </div>
+
+                      <div class="artists-hover">
+                          <p>
+                            <strong>best cocktails</strong>
+                              
+                          </p>
+
+                       
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-5 col-12">
+                  <div class="artists-thumb">
+                      <div class="artists-image-wrap">
+                          <img src="/IMGS/food1.jpg "
+                              class="artists-image img-fluid">
+                      </div>
+
+                      <div class="artists-hover">
+                          <p>
+                              <strong> Various Tastes from all around the world</strong>
+                              
+                          </p>
+
+                      
+                      </div>
+                  </div>
+
+                  <div class="artists-thumb">
+                      <img src="\IMGS\outresto.jpg"
+                          class="artists-image img-fluid">
+
+                      <div class="artists-hover">
+                          <p>
+                              <strong> Enjoy it all with a mesmerising view </strong>
+                             
+                          </p>
+
+                          
+                      </div>
+                  </div>
+       
+                
+            </div>
+          </div>
+      </div>
+  </section>
+
+  
+
+    
+
+  <section class="RANDB">
+    <div id="restaurant-menu1">
+      <div class="section-title text-center center">
+        <div class="overlay">
+          <h1> Favorite Spots </h1>
+          <span class="border"></span>
+          
+          <p>LOTUS's spots are various  from the vast pools to the blue ocean to the <br> but here is our 3 favorites </p>
+        </div>
+      </div> 
+      </div>
+    </section>
+
+       
+
+
+            <section class="artists-section section-padding" id="section_3">
+              <div class="container">
+                  <div class="row justify-content-center">
+        
+                     
+        
+                      <div class="col-lg-5 col-12">
+                          <div class="artists-thumb">
+                              <div class="artists-image-wrap">
+                                  <img src="\IMGS\grk.jpg"
+                                      class="artists-image img-fluid">
+                              </div>
+        
+                              <div class="artists-hover">
+                                  <p>
+                                      <strong>our architect says Hi </strong>
+                                     
+                                  </p>
+        
+                          
+                              </div>
+                          </div>
+                      </div>
+        
+                      <div class="col-lg-5 col-12">
+                          <div class="artists-thumb">
+                              <div class="artists-image-wrap">
+                                  <img src="\IMGS\fond4.jpg"
+                                      class="artists-image img-fluid">
+                              </div>
+        
+                              <div class="artists-hover">
+                                  <p>
+                                      <strong>our pool with a view </strong>
+                                    
+                                  </p>
+        
+                                 
+                              </div>
+                          </div>
+        
+                          <div class="artists-thumb">
+                              <img src="/IMGS/secrt.jpg"
+                                  class="artists-image img-fluid">
+        
+                              <div class="artists-hover">
+                                  <p>
+                                      <strong>Our secret garden</strong>
+                                    
+                                  </p>
+        
+                              
+                              </div>
+                          </div>
+               
+                        
+                    </div>
+                  </div>
+              </div>
+          </section>
+        
+     
+          <section class="RANDB">
+            <div id="restaurant-menu2">
+              <div class="section-title text-center center">
+                <div class="overlay">
+                  <h1> WELLNESS </h1>
+                  <span class="border"></span>
+                  <h4 class="font">Relax your mind & calm your soul </h4>
+                  <p>  LOTUS IS the best destination to relax.  </p>
+                </div>
+              </div> 
+              </div>
+            </section>
+
+  
+  
+            <section class="artists-section section-padding" id="section_3">
+              <div class="container">
+                  <div class="row justify-content-center">
+        
+                     
+        
+                      <div class="col-lg-5 col-12">
+                          <div class="artists-thumb">
+                              <div class="artists-image-wrap">
+                                  <img src="\IMGS\spa1.jpg"
+                                      class="artists-image img-fluid">
+                              </div>
+        
+                              <div class="artists-hover">
+                                  <p>
+                                      <strong>LOTUS's spa <br>the best place to relax </strong>
+                                     
+                                  </p>
+        
+                          
+                              </div>
+                          </div>
+                      </div>
+        
+                      <div class="col-lg-5 col-12">
+                          <div class="artists-thumb">
+                              <div class="artists-image-wrap">
+                                  <img src="\IMGS\yoga2.jpg"
+                                      class="artists-image img-fluid">
+                              </div>
+        
+                              <div class="artists-hover">
+                                  <p>
+                                      <strong>Practice yoga with our best teacher  </strong>
+                                    
+                                  </p>
+        
+                                 
+                              </div>
+                          </div>
+        
+                          <div class="artists-thumb">
+                              <img src="/IMGS/msg.jpg"
+                                  class="artists-image img-fluid">
+        
+                              <div class="artists-hover">
+                                  <p>
+                                      <strong> massage</strong>
+                                    
+                                  </p>
+        
+                              
+                              </div>
+                          </div>
+               
+                        
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <footer>
+            <div class="footer">
+              <div class="footerPart1">
+                <img src="../imgs/logo2.png" alt="Logo" id="secondlogo" />
+              </div>
+              <div class="footerPart2">
+                <h3>Contact Us</h3>
+                <p id="p1">(+216) 25 066 022</p>
+                <p>(+216) 98 547 112</p>
+                <p>(+216)25 066 022</p>
+              </div>
+              <div class="footerPart3">
+                <h3>Navigate our site</h3>
+                <a href="../Html/Home.html">Home</a> <br />
+                <a href="#">Rooms</a> <br />
+                <a href="#">Insights</a> <br />
+                <a href="#">Reservation</a> <br />
+                <a href="#">Log In</a> <br />
+                <a href="#">Sign Up</a> <br />
+                <a href="../Html/Contact.html">Contact</a>
+              </div>
+              <div class="copyright">
+                <p>Developped by OptimaSoft</p>
+              </div>
+            </div>
+          </footer>
+        
+
+<script src="\JS\insights.js">
+
+</script>
+
+</body>
+
+</html>

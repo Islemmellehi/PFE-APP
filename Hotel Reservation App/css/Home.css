@@ -82,8 +82,8 @@ li a:hover {
     color: #bec5cc;
     transition: 0.3s;
     letter-spacing: 3px;
-  
-  }
+
+}
 
 ul {
     list-style: none;
@@ -218,11 +218,20 @@ li a {
     left: 1200px;
     letter-spacing: 1px
 }
-a{
+
+.btn-sign a {
+    color: #20262E;
+    text-decoration: none;
+}
+.btn-sign a:hover{
+    color: #20262E;
+}
+a {
     text-decoration: none;
     color: white
 }
-a:hover{
+
+a:hover {
     color: white;
 }
 
@@ -505,11 +514,13 @@ video::-webkit-media-controls {
     transition: 0.3s;
 }
 
-#signBtn, #bookBtn{
+#signBtn,
+#bookBtn {
     font-size: 15px;
 }
 
-#signBtn:hover, #bookBtn:hover{
+#signBtn:hover,
+#bookBtn:hover {
     background-color: #DFD3C3;
     color: #20262E;
 }
@@ -526,9 +537,11 @@ video::-webkit-media-controls {
     transition: 0.3s;
     width: 150px;
 }
-#signBtn:hover, #bookBtn:hover{
+
+#signBtn:hover,
+#bookBtn:hover {
     cursor: pointer;
-    
+
 }
 
 .roomsCheck {

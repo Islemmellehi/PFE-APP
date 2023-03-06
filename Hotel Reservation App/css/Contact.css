@@ -53,6 +53,28 @@ nav {
     letter-spacing: 2px;
 
 }
+.btn-sign {
+    width: 75px;
+    height: 40px;
+    border: hidden;
+    border-radius: 2px;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #20262E;
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+    font-family: titleFont;
+    letter-spacing: 1px
+}
+
+.btn-sign a {
+    color: #20262E;
+    text-decoration: none;
+}
+.btn-sign a:hover{
+    color: #20262E;
+}
 
 .btn-grad a {
     text-decoration: none;
@@ -467,7 +489,7 @@ header {
 .footerPart2 {
     position: absolute;
     left: 35%;
-    top: 770px;
+    top: 800px;
     color: whitesmoke;
     font-family: titleFont;
 }
@@ -486,7 +508,7 @@ header {
 .footerPart3 {
     position: absolute;
     left: 5%;
-    top: 760px;
+    top: 800px;
     color: whitesmoke;
     font-family: titleFont;
 }
@@ -506,7 +528,7 @@ header {
 .copyright p {
     position: absolute;
     left: 44%;
-    top: 995px;
+    top: 1030px;
     font-size: 13px;
     color: whitesmoke;
     font-family: titleFont;
