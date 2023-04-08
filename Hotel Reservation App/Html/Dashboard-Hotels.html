@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lotus | Admin Hotels</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="../css/dashboard-hotel.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="fig">
+        <img src="../imgs/logoDash.png" alt="" id="dashlogo" />
+      </div>
+      <div class="sidebarHeader">
+        <h2>Lotus Resort</h2>
+      </div>
+      <a href="#" class="sub-menu-btn"
+        >Dashboard
+        <div class="arrow"></div>
+      </a>
+      <div class="sub-menu">
+        <a href="#">Analytics</a>
+        <a href="#">Others</a>
+      </div>
+      <a href="#" class="sub-menu-btn2"
+        >Tables
+        <div class="arrow"></div>
+      </a>
+      <div class="sub-menu2">
+        <a href="#">Hotel Photos</a>
+        <a href="#">Categories Photos</a>
+        <a href="#">Others</a>
+      </div>
+      <a href="#">Users</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </div>
+    <!-- Page content -->
+    <div class="content-header"></div>
+    <div class="content-header-parts">
+      <figure class="emails">
+        <div id="messages-icon">
+          <img src="../imgs/icons/envelope.png" alt="" />
+          <span id="messages-badge">10</span>
+        </div>
+      </figure>
+      <div class="date-time">
+        <img src="../imgs/icons/date.png" alt="" id="dateimg" />
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Hotels Table</h3>
+          </div>
+          <br>
+          <table id="#dataTable tbody">
+            <thead>
+              <tr>
+                <th id="first">Hotel Id</th>
+                <th id="second">Hotel Name</th>
+                <th id="third">Operations</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Js/dash.js"></script>
+  </body>
+</html>
