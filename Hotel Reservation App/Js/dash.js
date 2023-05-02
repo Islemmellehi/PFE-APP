@@ -13,6 +13,11 @@ subMenuBtn.addEventListener("click", function () {
   var subMenu = document.querySelector(".sub-menu2");
   subMenu.classList.toggle("active");
 });
+var subMenuBtn = document.querySelector(".sub-menu-btn3");
+subMenuBtn.addEventListener("click", function () {
+  var subMenu = document.querySelector(".sub-menu3");
+  subMenu.classList.toggle("active");
+});
 // Function to update the time display
 function updateTime() {
   const now = new Date();
@@ -129,3 +134,5 @@ function updateH(img){
       console.error("Error updating data:", error);
     });
 }
+
+

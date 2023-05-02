@@ -1,0 +1,250 @@
+@font-face {
+    font-family: NavFont;
+    src: url(./GentiumBookPlus-Bold.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(./ElMessiri-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: dashFont1;
+    src: url(./Alegreya-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: dashFont2;
+    src: url(./BreeSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: dashFont3;
+    src: url(./Righteous-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    color: black;
+    border-right: #AEC2B6 2px solid;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#dashlogo {
+    width: 200px;
+    margin-top: -32%;
+    margin-left: -35%;
+}
+
+.sidebar h2 {
+    margin-top: -45%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: dashFont3;
+    color: rgb(92, 91, 91);
+
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #cfcdcd;
+    /* change the color to your desired color */
+    display: inline-block;
+    margin-left: 5px;
+    /* optional: add margin to adjust spacing */
+}
+.arrow:hover{
+    transition: 0.3s;
+}
+
+.sidebarHeader {
+    width: 118.5%;
+    margin-left: -9%;
+    margin-bottom: 65px;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(72, 72, 72);
+    padding: 10px;
+    margin-left: -4%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: dashFont3;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: #cfcdcd;
+    transition: 0.3s;
+}
+
+.sidebar .sub-menu {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar .sub-menu.active {
+    display: block;
+}
+
+.sidebar .sub-menu a {
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 13px;
+
+}
+
+.sidebar .sub-menu2 {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar .sub-menu2.active {
+    display: block;
+}
+
+
+
+.sidebar .sub-menu3 a {
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 13px;
+
+}
+.sidebar .sub-menu3 {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar .sub-menu3.active {
+    display: block;
+}
+
+.sidebar .sub-menu2 a {
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 13px;
+
+}
+
+
+
+.content {
+    margin-left: 20%;
+    margin-top: 1%;
+
+}
+.content-header{
+    height: 80px;
+    opacity:calc(50%);
+    border-bottom: #cfcdcd 1px solid;
+    width: 90%;
+    margin-left: 18.7%;
+    z-index: -1;
+}
+.content-header-parts img{
+    width: 2%;
+    margin-left: 86%;
+    margin-top: -7%;
+}
+.content h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -3%;
+    font-family: dashFont2;
+    letter-spacing: 3px;
+    color: rgb(72, 72, 72);
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: titleFont;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Animation for opening and closing sidebar */
+.sidebar.active {
+    left: -250px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar h2 {
+        margin-top: 20px;
+    }
+
+    .sidebar a {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+
+/* Define the styles for the messages icon and badge */
+
+#messages-badge {
+    position: absolute;
+    top: 30px;
+    left: 1157px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #A4BC92;
+    color: rgb(92, 91, 91);
+    font-size: 12px;
+    font-weight: bold;
+}
+.date-time img{
+    margin-left: 22%;
+    margin-top: -13.2%;
+}
+.date-time p {
+    margin-left: 26%;
+    font-family: dashFont1;
+    font-weight: bold;
+}
+#date{
+   position: absolute;
+   top: 25px;
+   left: 0px;
+}
+#time{
+    position: absolute;
+   top: 47px;
+   left: 0px;
+}

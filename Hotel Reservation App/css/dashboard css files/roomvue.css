@@ -1,26 +1,26 @@
 @font-face {
     font-family: NavFont;
-    src: url(../fonts/GentiumBookPlus-Bold.ttf);
+    src: url(./GentiumBookPlus-Bold.ttf);
 }
 
 @font-face {
     font-family: titleFont;
-    src: url(../fonts/ElMessiri-VariableFont_wght.ttf);
+    src: url(./ElMessiri-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: dashFont1;
-    src: url(../fonts/Alegreya-VariableFont_wght.ttf);
+    src: url(./Alegreya-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: dashFont2;
-    src: url(../fonts/BreeSerif-Regular.ttf);
+    src: url(./BreeSerif-Regular.ttf);
 }
 
 @font-face {
     font-family: dashFont3;
-    src: url(../fonts/Righteous-Regular.ttf);
+    src: url(./Righteous-Regular.ttf);
 }
 
 body {
@@ -70,7 +70,8 @@ body {
     margin-left: 5px;
     /* optional: add margin to adjust spacing */
 }
-.arrow:hover{
+
+.arrow:hover {
     transition: 0.3s;
 }
 
@@ -131,43 +132,6 @@ body {
 
 }
 
-
-
-.content {
-    margin-left: 20%;
-    margin-top: 1%;
-
-}
-.content-header{
-    height: 80px;
-    opacity:calc(50%);
-    border-bottom: #cfcdcd 1px solid;
-    width: 90%;
-    margin-left: 18.7%;
-    z-index: -1;
-}
-.content-header-parts img{
-    width: 2%;
-    margin-left: 86%;
-    margin-top: -7%;
-}
-.content h3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: -3%;
-    font-family: dashFont2;
-    letter-spacing: 3px;
-    color: rgb(72, 72, 72);
-}
-
-.content p {
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: titleFont;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
 /* Animation for opening and closing sidebar */
 .sidebar.active {
     left: -250px;
@@ -212,22 +176,127 @@ body {
     font-size: 12px;
     font-weight: bold;
 }
-.date-time img{
+
+.date-time img {
     margin-left: 22%;
     margin-top: -13.2%;
 }
+#imgdat{
+    margin-left: 22%;
+    margin-top: -13.2%;
+}
+
+#dateimg {
+    margin-left: 22%;
+    margin-top: -13.2%;
+}
+
 .date-time p {
     margin-left: 26%;
     font-family: dashFont1;
     font-weight: bold;
 }
-#date{
-   position: absolute;
-   top: 25px;
-   left: 0px;
-}
-#time{
+
+#date {
     position: absolute;
-   top: 47px;
-   left: 0px;
+    top: 25px;
+    left: 0px;
+}
+
+#time {
+    position: absolute;
+    top: 47px;
+    left: 0px;
+}
+
+.content-header {
+    height: 80px;
+    opacity: calc(50%);
+    border-bottom: #cfcdcd 1px solid;
+    width: 90%;
+    margin-left: 18.7%;
+    z-index: -1;
+}
+
+.content-header-parts img {
+    width: 2%;
+    margin-left: 86%;
+    margin-top: -7%;
+}
+
+.content h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -3%;
+    margin-left: 2%;
+    font-family: dashFont2;
+    letter-spacing: 3px;
+    color: rgb(72, 72, 72);
+}
+
+.content {
+    margin-left: 20%;
+    margin-top: 1%;
+
+}
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: 3%;
+}
+
+/* Table header style */
+th {
+    background-color: #A4BC92;
+    font-weight: bold;
+    font-family: dashFont1;
+    padding: 8px;
+    border: 1px solid #ccc;
+
+}
+
+/* Table row style */
+tr {
+    background-color: #ffffff;
+}
+
+/* Table cell style */
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-family: dashFont1;
+}
+
+/* Add hover effect on table rows */
+tr:hover {
+    background-color: #f9f9f9;
+}
+.sidebar .sub-menu3 a {
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 13px;
+
+}
+.sidebar .sub-menu3 {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar .sub-menu3.active {
+    display: block;
+}
+
+
+#first{
+    width: 15%;
+}
+#third{
+    width: 15%;
+}
+
+table img:hover{
+    cursor: pointer;
 }
