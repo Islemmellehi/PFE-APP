@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lotus | Contrats</title>
-    <link
-      rel="shortcut icon"
-      href="/Hotel Reservation App/imgs/favicon.ico"
-      type="image/x-icon"
-    />
+    <title>Lotus | Hotels</title>
+    <link rel="shortcut icon" href="/Hotel Reservation App/imgs/favicon.ico" type="image/x-icon" />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="/Hotel Reservation App/css/dashboard css files/contrat.css"
+      href="/Hotel Reservation App/css/dashboard css files/societe.css"
     />
     <link
       rel="stylesheet"
@@ -21,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
-  <body onload="getContrats()">
+  <body onload="getHotels()">
     <!-- Sidebar -->
     <!-- Sidebar -->
     <div class="sidebar">
@@ -69,10 +65,10 @@
         <a href="./userroles.html">User Roles</a>
         <a href="./roles.html">Roles</a>
         <a href="./hotel.html">Hotels</a>
-        <a href="#">Others</a>
       </div>
       <a href="#">Logout</a>
     </div>
+    <!-- Page content -->
     <div class="content-header"></div>
     <div class="content-header-parts">
       <figure class="emails">
@@ -99,21 +95,24 @@
       </div>
     </div>
 
-
     <div class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <h3>Contrats</h3>
+            <h3>Hotels</h3>
           </div>
           <br />
           <table id="#dataTable tbody">
             <thead>
               <tr>
-                <th id="first">Cod Contrat</th>
-                <th id="second">Date Debut</th>
-                <th id="third">Date Fin</th>
-                <th id="fourth">Operations</th>
+                <th id="first">Cod Hotel</th>
+                <th id="second">Lib Hotel</th>
+                <th id="third">Abr Hotel</th>
+                <th id="fourth">Pays Hotel</th>
+                <th id="fifth">Ville Hotel</th>
+                <th id="sixth">Class Hotel</th>
+                <th id="seventh">Category Hotel</th>
+                <th id="eleventh">Operations</th>
               </tr>
             </thead>
             <tbody id="tbody"></tbody>

@@ -1,4 +1,4 @@
-//Pension get request for dashboard 
+//Pension get request for dashboard
 function getPensions() {
   fetch("http://localhost:2001/pensions")
     .then((response) => response.json())
@@ -30,7 +30,7 @@ function getPensions() {
     })
     .catch((error) => console.error(error));
 }
-//Contrat get request for dashboard 
+//Contrat get request for dashboard
 
 function getContrats() {
   fetch("http://localhost:2001/contrats")
@@ -39,7 +39,6 @@ function getContrats() {
       var html = "";
       const tableBody = document.querySelector("#tbody");
       var len = data.length;
-
 
       data.forEach((pension) => {
         const row = document.createElement("tr");
@@ -78,7 +77,7 @@ function getContrats() {
     })
     .catch((error) => console.error(error));
 }
-//Societe get request for dashboard 
+//Societe get request for dashboard
 
 function getSocietes() {
   fetch("http://localhost:2001/societes")
@@ -120,8 +119,7 @@ function getSocietes() {
     .catch((error) => console.error(error));
 }
 
-
-//Room Category get request for dashboard 
+//Room Category get request for dashboard
 
 function getRoomCats() {
   fetch("http://localhost:2001/roomcats")
@@ -171,8 +169,7 @@ function getRoomCats() {
     .catch((error) => console.error(error));
 }
 
-
-//Room Vues get request for dashboard 
+//Room Vues get request for dashboard
 
 function getVues() {
   fetch("http://localhost:2001/roomvues")
@@ -206,8 +203,7 @@ function getVues() {
     .catch((error) => console.error(error));
 }
 
-
-//Contrat Stock Room get request for dashboard 
+//Contrat Stock Room get request for dashboard
 
 function getStock() {
   fetch("http://localhost:2001/stock")
@@ -270,7 +266,10 @@ function getHotelPhotos() {
             
           `;
         tableBody.appendChild(row);
+        
       });
+      
+      
 
       console.log(len);
       document.getElementById("responsepensions").innerHTML = html;
@@ -278,7 +277,7 @@ function getHotelPhotos() {
     .catch((error) => console.error(error));
 }
 
-//Reservation get request for dashboard 
+//Reservation get request for dashboard
 
 function getReservations() {
   fetch("http://localhost:2001/reservations")
@@ -318,7 +317,6 @@ function getReservations() {
     })
     .catch((error) => console.error(error));
 }
-
 
 //Reservation Detail get request for dashboard
 
@@ -360,7 +358,6 @@ function getResDetails() {
     .catch((error) => console.error(error));
 }
 
-
 //Contrat prix get request for dashboard
 
 function getContratPrix() {
@@ -401,7 +398,6 @@ function getContratPrix() {
     .catch((error) => console.error(error));
 }
 
-
 //Users get request for dashboard
 function getUsers() {
   fetch("http://localhost:2001/users")
@@ -437,9 +433,6 @@ function getUsers() {
     .catch((error) => console.error(error));
 }
 
-
-
-
 //User roles get request for dashboard
 function getUserRoles() {
   fetch("http://localhost:2001/userroles")
@@ -473,9 +466,6 @@ function getUserRoles() {
     .catch((error) => console.error(error));
 }
 
-
-
-
 //Roles get request for dashboard
 function getRoles() {
   fetch("http://localhost:2001/roles")
@@ -508,3 +498,125 @@ function getRoles() {
     })
     .catch((error) => console.error(error));
 }
+
+//Hotels get request for dashboard
+function getHotels() {
+  fetch("http://localhost:2001/hotels")
+    .then((response) => response.json())
+    .then((data) => {
+      var html = "";
+      const tableBody = document.querySelector("#tbody");
+      var len = data.length;
+
+      data.forEach((hotel) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td id="a">${hotel.COD_HOTEL}</td>
+            <td id="b">${hotel.LIB_HOTEL}</td>
+            <td id="b">${hotel.ABR_HOTEL}</td>
+            <td id="b">${hotel.PAYS_HOTEL}</td>
+            <td id="b">${hotel.VILL_HOTEL}</td>
+            <td id="b">${hotel.CLASS_HOTEL}</td>
+            <td id="b">${hotel.CATEG_HOTEL}</td>
+            <td><img src="/Hotel Reservation App/imgs/icons/delete.png" alt="" class="delete-btn" id="deltimg" onclick="deleteH(this)" style="    
+            margin-left: 0%;
+            margin-top: 0%; 
+            width:22%" /><img src="/Hotel Reservation App/imgs/icons/modify.png" class="delete-btn" alt="" onclick="updateH(this)" id="modfimg" style="    
+            margin-left: 5%;
+            margin-top: 0%; 
+            width:19%" />
+            </td>
+            
+          `;
+        tableBody.appendChild(row);
+      });
+      
+
+      console.log(len);
+      document.getElementById("responsepensions").innerHTML = html;
+    })
+    .catch((error) => console.error(error));
+}
+
+const openButton = document.getElementById("open-button");
+const closeButton = document.getElementById("close-button");
+
+//pop upp
+function PopUp() {
+  const popUp = document.getElementById("pop-up");
+
+  popUp.style.display = "block";
+}
+
+closeButton.addEventListener("click", () => {
+  popUp.style.display = "none";
+});
+
+//Hotels get request for dashboard
+function getMessages() {
+  fetch("http://localhost:2001/messages")
+    .then((response) => response.json())
+    .then((data) => {
+      var html = "";
+      const tableBody = document.querySelector("#tbody");
+      var len = data.length;
+
+      data.forEach((message) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td id="a">${message.COD_MESSAGE}</td>
+            <td id="b">${message.SENDER}</td>
+            <td id="b">${message.CONTENT}</td>
+           
+            <td><img src="/Hotel Reservation App/imgs/icons/delete.png" alt="" class="delete-btn" id="deltimg" onclick="deleteH(this)" style="    
+            margin-left: 0%;
+            margin-top: 0%; 
+            width:10%" /><img src="/Hotel Reservation App/imgs/icons/modify.png" class="delete-btn" alt="" onclick="updateH(this)" id="modfimg" style="    
+            margin-left: 5%;
+            margin-top: 0%; 
+            width:8%" />
+            </td>
+            
+          `;
+        tableBody.appendChild(row);
+        
+        const container = document.getElementById("pop-up");
+        container.innerHTML += `
+        <div id="message-container">
+        <p><span id="sp">Sender</span> : ${message.SENDER}</p>
+        <p><span id="sp">Content</span>:${message.CONTENT}</p>
+        </div>
+        
+        
+        `;
+      });
+      
+
+      console.log(len);
+      document.getElementById("responsepensions").innerHTML = html;
+    })
+    .catch((error) => console.error(error));
+}
+
+
+fetch("http://localhost:2001/messages")
+    .then((response) => response.json())
+    .then((data) => {
+      
+      data.forEach((message) => {
+        
+        
+        const container = document.getElementById("pop-up");
+        container.innerHTML += `
+        <div id="message-container">
+        <p><span id="sp">Sender</span> : ${message.SENDER}</p>
+        <p><span id="sp">Content</span>:${message.CONTENT}</p>
+        </div>
+        
+        
+        `;
+      });
+      
+
+      
+})

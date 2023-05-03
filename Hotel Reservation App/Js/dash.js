@@ -136,3 +136,12 @@ function updateH(img){
 }
 
 
+
+function openPopup(){
+  var openpop = document.getElementById("pop-up")
+  openpop.style.display="block"
+}
+function closePopup(){
+  var openpop = document.getElementById("pop-up")
+  openpop.style.display="none"
+}

@@ -194,17 +194,19 @@ body {
 
 
 .date-time img {
-    margin-left: 22%;
-    margin-top: -13.2%;
+
+    position: absolute;
+    top: 130px;
+    left: -840px;
 }
 #imgdat{
     margin-left: 22%;
     margin-top: -13.2%;
 }
 
-#dateimg {
+.date-time img {
     margin-left: 22%;
-    margin-top: -13.2%;
+    margin-top: -9.2%;
 }
 
 .date-time p {
@@ -218,13 +220,102 @@ body {
     top: 25px;
     left: 0px;
 }
-
 #time {
     position: absolute;
     top: 47px;
     left: 0px;
 }
 
+
+#message-container p {
+    color: black;
+    font-family: dashFont1;
+    font-size: 13px;
+    margin-left: 5%;
+}
+
+#message-container {
+    background-color: #F9F5E7;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: hidden;
+    border-radius: 5px;
+    
+}
+
+
+
+#pop-up {
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 320px;
+    left: 1122px;
+    width: 300px;
+    height: 500px;
+    z-index: 9999;
+    font-family: dashFont1;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+    max-width: 500px;
+    max-height: 80%;
+    overflow: auto;
+}
+
+#sp{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+#msg-pop{
+    position: absolute;
+    top: -30px;
+}
+#close-button {
+    position: sticky;
+    top: 91%;
+    font-size: 13px;
+    font-family: dashFont1;
+    color: #f9f9f9;
+    left: 35%;
+    width: 90px;
+    height: 30px;
+    background-color: #A4BC92;
+
+}
+
+button#open-button {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#openbtn {
+    background-color: #A4BC92;
+    border: hidden;
+    position: absolute;
+    top: 30px;
+    left: 1150px;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    color: #f9f9f9;
+    font-family: dashFont1;
+}
+
+#close-container{
+    background-color: white;
+    z-index: 999;
+    height: 50px;
+    position: sticky;
+    left:0px;
+    top: 450px;
+    width: 350px;
+}
 .content-header {
     height: 80px;
     opacity: calc(50%);
@@ -243,7 +334,7 @@ body {
 .content h3 {
     font-size: 25px;
     font-weight: bold;
-    margin-top: -3%;
+    margin-top: 5%;
     margin-left: 2%;
     font-family: dashFont2;
     letter-spacing: 3px;

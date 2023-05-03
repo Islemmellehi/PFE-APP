@@ -64,7 +64,7 @@
         <a href="./dashboard files/user.html">Users</a>
         <a href="./userroles.html">User Roles</a>
         <a href="./roles.html">Roles</a>
-        <a href="#">Hotel</a>
+        <a href="./hotel.html">Hotels</a>
         <a href="#">Others</a>
       </div>
       <a href="#">Logout</a>
@@ -74,16 +74,23 @@
     <div class="content-header-parts">
       <figure class="emails">
         <div id="messages-icon">
-          <img src="/Hotel Reservation App/imgs/icons/envelope.png" alt="" />
-          <span id="messages-badge">10</span>
+          <button onclick="openPopup()" id="openbtn">Messages</button>
+          <div id="pop-up" style="overflow-x: hidden">
+            <div id="msg-pop"></div>
+            <div id="close-container">
+              <button
+                id="close-button"
+                class="btn btn-light"
+                onclick="closePopup()"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
       </figure>
       <div class="date-time">
-        <img
-          src="/Hotel Reservation App/imgs/icons/date.png"
-          alt=""
-          id="imgdat"
-        />
+        <img src="/Hotel Reservation App/imgs/icons/date.png" alt="" />
         <p id="date"></p>
         <p id="time"></p>
       </div>
