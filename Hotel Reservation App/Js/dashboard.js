@@ -266,10 +266,7 @@ function getHotelPhotos() {
             
           `;
         tableBody.appendChild(row);
-        
       });
-      
-      
 
       console.log(len);
       document.getElementById("responsepensions").innerHTML = html;
@@ -530,7 +527,6 @@ function getHotels() {
           `;
         tableBody.appendChild(row);
       });
-      
 
       console.log(len);
       document.getElementById("responsepensions").innerHTML = html;
@@ -564,50 +560,64 @@ function getMessages() {
       data.forEach((message) => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td id="a">${message.COD_MESSAGE}</td>
+            <td id="b">${message.COD_MESSAGE}</td>
             <td id="b">${message.SENDER}</td>
             <td id="b">${message.CONTENT}</td>
            
-            <td><img src="/Hotel Reservation App/imgs/icons/delete.png" alt="" class="delete-btn" id="deltimg" onclick="deleteH(this)" style="    
-            margin-left: 0%;
+            <td><img src="/Hotel Reservation App/imgs/icons/delete.png" alt="" class="delete-btn" id="deltimg" onclick="deleteMessage(this)" style="    
+            margin-left: 40%;
             margin-top: 0%; 
-            width:10%" /><img src="/Hotel Reservation App/imgs/icons/modify.png" class="delete-btn" alt="" onclick="updateH(this)" id="modfimg" style="    
-            margin-left: 5%;
-            margin-top: 0%; 
-            width:8%" />
+            width:10%" />
             </td>
             
           `;
         tableBody.appendChild(row);
-        
+
         const container = document.getElementById("pop-up");
         container.innerHTML += `
         <div id="message-container">
         <p><span id="sp">Sender</span> : ${message.SENDER}</p>
         <p><span id="sp">Content</span>:${message.CONTENT}</p>
         </div>
-        
-        
         `;
       });
-      
 
-      console.log(len);
       document.getElementById("responsepensions").innerHTML = html;
     })
     .catch((error) => console.error(error));
 }
 
+function deleteMessage(msg) {
+  var row = msg.parentNode.parentNode;
+  var cell = row.cells[0];
+  var columnValue = cell.innerHTML;
+
+  fetch(`http://localhost:2001/deletemsg/${columnValue}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to delete message");
+        } else {
+          alert("Message deleted successfully.");
+          location.reload()
+        }
+      })
+      .catch((error) => {
+        console.error("Error deleting message:", error);
+      });
+
+}
 
 fetch("http://localhost:2001/messages")
-    .then((response) => response.json())
-    .then((data) => {
-      
-      data.forEach((message) => {
-        
-        
-        const container = document.getElementById("pop-up");
-        container.innerHTML += `
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((message) => {
+      const container = document.getElementById("pop-up");
+      container.innerHTML += `
         <div id="message-container">
         <p><span id="sp">Sender</span> : ${message.SENDER}</p>
         <p><span id="sp">Content</span>:${message.CONTENT}</p>
@@ -615,8 +625,5 @@ fetch("http://localhost:2001/messages")
         
         
         `;
-      });
-      
-
-      
-})
+    });
+  });

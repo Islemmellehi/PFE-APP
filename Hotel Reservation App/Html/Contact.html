@@ -73,16 +73,11 @@
             placeholder="Enter Your Email .."
             name="sender"
             id="sender"
+            style="width: 620px;"
           />
           <br />
-          <label for="subject" id="sub">Subject :</label> <br />
-          <input
-            type="text"
-            name="subject"
-            placeholder="Enter Email Subject .."
-            id="subject"
-          />
-          <br />
+          <br>
+          
           <label for="message">Message :</label> <br />
           <input
             type="text"
@@ -91,7 +86,7 @@
             id="message"
           />
           <br />
-          <button type="submit" class="btn btn-dark">Send</button>
+          <button type="submit" class="btn btn-dark" onclick="saveMsg()">Send</button>
         </form>
       </section>
       <section class="findUs">
@@ -140,5 +135,39 @@
         </div>
       </div>
     </footer>
+    <script>
+      function saveMsg() {
+        // Get form data
+        const sender = document.getElementById("sender").value;
+        const content = document.getElementById("message").value;
+
+       console.log(sender)
+       console.log(content)
+
+       var message
+        message = {
+          sender: sender,
+          content: content
+        };
+        console.log(message);
+
+        fetch("http://localhost:2001/createmsg", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(message),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Message sent:", data);
+            alert('Your message has been sent successfully !')
+          })
+          .catch((error) => {
+            console.error("Error sending message:", error);
+          });
+        
+      }
+    </script>
   </body>
 </html>

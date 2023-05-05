@@ -30,36 +30,6 @@ function updateTime() {
 // Update the time display every second
 setInterval(updateTime, 1000);
 
-fetch("http://localhost:9010/hotels")
-  .then((response) => response.json())
-  .then((data) => {
-    const tableBody = document.querySelector("#tbody");
-
-    // Loop through data and create table rows
-    data.forEach((hotel) => {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-            <td>${hotel.hotelId}</td>
-            <td>${hotel.hotelName}</td>
-            <td><img src="../imgs/icons/delete.png" alt="" class="delete-btn" id="deltimg" onclick="deleteH(this)" style="    
-            margin-left: 0%;
-            margin-top: 0%; 
-            width:20%" /><img src="../imgs/icons/modify.png" class="delete-btn" alt="" onclick="updateH(this)" id="modfimg" style="    
-            margin-left: 5%;
-            margin-top: 0%; 
-            width:18%" />
-            </td>
-            
-          `;
-      tableBody.appendChild(row);
-    });
-  })
-  .catch((error) => console.error(error));
-
-  
-function test(){
-    alert('this works')
-}
 
 
 
@@ -145,3 +115,14 @@ function closePopup(){
   var openpop = document.getElementById("pop-up")
   openpop.style.display="none"
 }
+
+
+
+
+
+
+
+
+
+
+

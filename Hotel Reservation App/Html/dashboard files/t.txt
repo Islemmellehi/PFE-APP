@@ -1,0 +1,15 @@
+// Send POST request to server
+        fetch("http://localhost:2001/createmsg", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(msg),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Message sent:", data);
+          })
+          .catch((error) => {
+            console.error("Error sending message:", error);
+          });
